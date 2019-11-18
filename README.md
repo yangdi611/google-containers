@@ -33,7 +33,9 @@ google containers from gcr.io
     
     
 ## Kubernets1.16.3 镜像（on CentOS after testing）：
- k8s.gcr.io/kube-apiserver:v1.16.3 k8s.gcr.io/kube-controller-manager:v1.16.3
+
+ k8s.gcr.io/kube-apiserver:v1.16.3
+ k8s.gcr.io/kube-controller-manager:v1.16.3
  k8s.gcr.io/kube-scheduler:v1.16.3
  k8s.gcr.io/kube-proxy:v1.16.3
  k8s.gcr.io/pause:3.1
