@@ -14,11 +14,12 @@ FROM gcr.io/google_containers/kubernetes-dashboard-amd64:v1.7.1
 MAINTAINER xxx@xxx.com
 
 2.  提交克隆
+<code>
 # cd <克隆代码根目录>
 # git add .
 # git commit -m "kubernetes-dashboard-amd64:v1.7.1"
 # git push
-
+<code>
 3.  最后提交完成后的代码结构
 4.  登陆 DockerHub，创建 Automated Build 项目
     如未关联账号，会提示绑定 github 账号，按提示操作即可。
