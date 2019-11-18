@@ -4,12 +4,12 @@ google containers from gcr.io
 1.  编写 Dockerfile (以 dashboard 为例)
 
 ```shell
- #cd googlecontainer
- # mkdir dashboard
- # cd dashboard
- # vim Dockerfile
+#cd googlecontainer
+# mkdir dashboard
+# cd dashboard
+# vim Dockerfile
 ```
- 
+
     FROM gcr.io/google_containers/kubernetes-dashboard-amd64:v1.7.1
     MAINTAINER xxx@xxx.com
 
