@@ -3,22 +3,23 @@ google containers from gcr.io
 
 1.  编写 Dockerfile (以 dashboard 为例)
 
-<code>
-#cd googlecontainer
-# mkdir dashboard
-# cd dashboard
-# vim Dockerfile
-<code>
+```shell
+ #cd googlecontainer
+ # mkdir dashboard
+ # cd dashboard
+ # vim Dockerfile
+```
  
-FROM gcr.io/google_containers/kubernetes-dashboard-amd64:v1.7.1
-MAINTAINER xxx@xxx.com
+    FROM gcr.io/google_containers/kubernetes-dashboard-amd64:v1.7.1
+    MAINTAINER xxx@xxx.com
 
 2.  提交克隆
+
 <code>
-# cd <克隆代码根目录>
-# git add .
-# git commit -m "kubernetes-dashboard-amd64:v1.7.1"
-# git push
+    # cd <克隆代码根目录>
+    # git add .
+    # git commit -m "kubernetes-dashboard-amd64:v1.7.1"
+    # git push
 <code>
 3.  最后提交完成后的代码结构
 4.  登陆 DockerHub，创建 Automated Build 项目
