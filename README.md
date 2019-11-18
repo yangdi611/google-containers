@@ -4,7 +4,7 @@ google containers from gcr.io
 1.  编写 Dockerfile (以 dashboard 为例)
 
 <code>
- #cd googlecontainer
+ #cd googlecontainer \n
  # mkdir dashboard
  # cd dashboard
  # vim Dockerfile
