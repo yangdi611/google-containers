@@ -1,7 +1,8 @@
 FROM php:7.2-apache
 
 # add helper script
-ADD https://raw.githubusercontent.com/mlocati/docker-php-extension-installer/master/install-php-extensions /usr/local/bin/
+#ADD https://raw.githubusercontent.com/mlocati/docker-php-extension-installer/master/install-php-extensions /usr/local/bin/
+COPY --from=mlocati/php-extension-installer /usr/bin/install-php-extensions /usr/bin/
 
 # install extra packages
 RUN apt-get update \
