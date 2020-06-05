@@ -27,8 +27,8 @@ RUN curl -L -o /tmp/iTop.zip https://newcontinuum.dl.sourceforge.net/project/ito
 	&& rm -rf /tmp/iTop.zip /tmp/web
 
 # Add default configuration
-COPY php.ini /usr/local/etc/php/php.ini
-COPY config-itop.php /var/www/html/conf/production/config-itop.php
+#COPY php.ini /usr/local/etc/php/php.ini
+#COPY config-itop.php /var/www/html/conf/production/config-itop.php
 RUN chown -R www-data: /var/www/html/conf
 
 ENV DB_HOSTNAME="db" DB_PREFIX=""
